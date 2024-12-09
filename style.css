@@ -1,0 +1,138 @@
+/* Общий стиль */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('img/bg.png') no-repeat top center; /* Фон начинается сверху */
+    
+    background-size: cover;
+    background-attachment: scroll; /* Фон скролируется вместе с содержимым */
+    overflow-x: hidden; /* Запрет горизонтальной прокрутки */
+}
+   
+
+/* Плавающая панель навигации */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Панель по ширине окна */
+    max-width: 2560px; /* Фиксированная ширина */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем */
+    background: linear-gradient(90deg, black, #2e0647);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(90deg, #2b0741, black);
+    border: 2px solid #5c3298;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    white-space: nowrap; /* Запрет переноса текста */
+}
+
+.navbar a.active {
+    background: linear-gradient(90deg, #880f76, #2e0647);
+    
+    /* background: #3c085d; */
+}
+
+.navbar a:hover {
+    background: linear-gradient(90deg, #880f76, #2e0647);
+    
+    color: white;
+}
+
+/* Контент */
+.content {
+    margin-top: 80px; /* Учитываем высоту панели навигации */
+    width: 1280px; /* Фиксированная ширина контента */
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow-x: auto; /* Горизонтальная прокрутка при необходимости */
+}
+/* главная */
+.narrative-container {
+    
+    max-width: 800px;
+    min-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+
+.narrative-title {
+    font-size: 2.5em;
+    color: #ae79dd;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.narrative-highlight {
+    font-weight: bold;
+    color: #9c68ca;
+}
+
+
+
+.narrative-cta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.narrative-button {
+    
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #2b0741, black);
+    border: 2px solid #5c3298;
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.narrative-button:hover {
+    background: linear-gradient(90deg, #880f76, #2e0647);
+}
+
+img {
+    max-width: 70%; /* Изображение не будет превышать ширину родительского контейнера */
+    height: auto; /* Сохраняет пропорции */
+    display: block; /* Убирает лишние пробелы вокруг изображения */
+    margin: 0 auto; /* Центрирует изображение */
+    border-radius: 15px; /* Опционально: скругляет углы для эстетики */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Опционально: добавляет тень */
+}
+
+
+
+
+
+
