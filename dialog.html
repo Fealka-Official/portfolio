@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        iframe {
+            display: block;
+            border: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html" >О себе</a></li>
+            <li><a href="simulator.html">Симулятор свиданий</a></li>
+            <li><a href="trailer.html">Трейлер</a></li>
+            <li><a href="dialog.html" class="active">Нелинейный диалог</a></li>
+            <li><a href="newsletter.html">Концепт-документ</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        
+        <h1>Нелинейный диалог</h1>
+        <p>Пример диалога с NPC для игры с нелинейным сюжетом. </p>
+    </div>
+    <div class="iframe-container">
+        <iframe src="https://itch.io/embed-upload/12213034?color=333333" 
+                allowfullscreen 
+                width="640" 
+                height="580">
+            <a href="https://fealka.itch.io/example">Play example on itch.io</a>
+        </iframe>
+    </div>
+
+</body>
+</html>

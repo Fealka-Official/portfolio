@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симулятор свиданий</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключение внешнего CSS -->
+    <style>
+        /* Стили, связанные с видео */
+        .video-container {
+            margin-top: 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень вокруг блока */
+        }
+
+        .video-container iframe {
+            width: 100%; /* Видео занимает всю ширину контейнера */
+            max-width: 800px; /* Максимальная ширина видео */
+            height: 450px; /* Пропорциональная высота */
+            border: 5px solid #5c3298; /* Рамка вокруг видео */
+            border-radius: 10px;
+        }
+
+                /* Таблица в темной стилистике */
+                .styled-table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 1rem;
+            min-width: 100%;
+            max-width: 1280px;
+            background-color: rgba(0, 0, 0, 1);
+            color: white;
+            border: 1px solid #5c3298;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            text-align: left;
+        }
+
+        .styled-table thead tr {
+            background: linear-gradient(90deg, #5c3298, black);
+            color: white;
+            font-weight: bold;
+        }
+
+        .styled-table th, .styled-table td {
+            padding: 12px 15px;
+            border: 1px solid #2e0647;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #2e0647;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: rgba(90, 30, 120, 0.2);
+        }
+
+        .styled-table tbody tr:hover {
+            background-color: rgba(90, 30, 120, 0.4);
+        }
+
+        h1 {
+	padding-top: 70px;
+	
+	
+
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">О себе</a></li>
+            <li><a href="simulator.html">Симулятор свиданий</a></li>
+            <li><a href="trailer.html" class="active">Трейлер</a></li>
+            <li><a href="dialog.html">Нелинейный диалог</a></li>
+            <li><a href="newsletter.html">Концепт-документ</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        
+        
+        
+        <div class="video-container">
+            <h2>Пример сценария игрового трейлера.</h2>
+            <iframe 
+                src="https://www.youtube.com/embed/WwGey3xW68M" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+    <th>Character</th><th>Line_RU</th><th>Line_EN</th><th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+    <tr><td>Джун</td><td>А на войне... все средства хороши. Все, кроме моего. Так было раньше.</td><td>And in war... anything goes. Everything except my methods. That was how it used to be. </td><td>Начало войны Династии с Легионом. Столкновение Джун с Теневым отрядом Сержанта. </td></tr><tr><td>Джун</td><td>Король - отнюдь не самая сильная фигура на доске, но самая важная. Так говорил мне отец, когда убеждал, что принцессе не место на поле брани.</td><td>The king is far from the most powerful piece on the board, but he is the most important. That's what my father told me while convincing me that a princess has no place on the battlefield. </td><td>Флешбек: Джун и Император играют в шахматы.</td></tr><tr><td>Джун</td><td>Но я не безвольная фигура на игровом поле. Я человек, и я способна изменить свою судьбу, а с ней - и будущее своего народа.</td><td>But I am not a powerless piece on the game board. I am a person, and I can change my fate, and with it, the future of my people.</td><td>Настоящее время. Сражение с Теневым отрядом продолжается, Джун спасает одного из бойцов Династии от легионера.</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td>Джун</td><td>Мне всегда претила мысль о том, чтобы бездействовать сидя на троне. И Гален научил меня орудовать цепным ножом.</td><td>I have always loathed the thought of sitting idle on the throne. And Galen taught me how to wield a chain knife.</td><td>Флешбек: тренировка в школе Галена.</td></tr><tr><td>Джун</td><td>Но этого оказалось недостаточно. Позолота и сталь ничтожны в сравнении с испепеляющим Светом и всепоглощающей Тьмой.</td><td>But that was not enough. Gilding and steel are insignificant compared to the searing Light and all-consuming Darkness. </td><td>Геймплейная вставка: череда поражений Джун.</td></tr><tr><td>Джун</td><td>Мое мастерство всегда было бессильно против носителей могущественных энергий. Тогда, потерпев бесчисленное множество поражений и побывав в плену у врага, я поняла, что пришла пора все изменить.</td><td>My skills have always been powerless against the bearers of mighty energies. Then, after suffering countless defeats and being held captive by the enemy, I realized it was time to change everything.</td><td>Настоящее время: Теневой отряд во главе с Сержантом захватывает Джун в плен.</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td>Джун</td><td>Я отправилась на поиски своей собственной силы. Путеводным светом мне послужила падающая звезда, и на месте ее падения я обнаружила его... свой клинок.</td><td>I set out to find my own power. A falling star served as my guiding light, and at the site of its fall, I discovered it... my blade.</td><td>Посреди ночи над городом пролетает падающая звезда. На место падения небесного тела приходит Джун, но обнаруживает вместо метеорита воткнутый в землю нож. Она поднимает его и сжимает в руке рукоять.</td></tr><tr><td>Джун</td><td>Он дал мне силу, но взамен навсегда отнял покой. Я долго училась с ним управляться, но в конце концов почти полностью подчинила его себе.</td><td>It gave me strength, but in return, it took my peace forever. I spent a long time learning to master it, but eventually, I almost completely bent it to my will.</td><td>Джун медитирует над ножом. Постепенно он поднимается в воздух, повинуясь ее воле.</td></tr><tr><td>Джун</td><td>Пускай космический клинок мне повинуется, мой путь как никогда далек от завершения. Отныне и вовек мне предстоит хранить баланс на тонкой грани между гармонией и хаосом.</td><td>Though the cosmic blade obeys me, my journey is as far from over as ever. From now on, I will forever maintain the balance on the thin line between harmony and chaos.</td><td>Демонстрация скина и геймплейные вставки.</td></tr><tr><td>Джун</td><td>Но я не жалею о своем выборе и верю, что смогу сохранить хрупкое равновесие. И пусть процветание Династии дарует мой нож, а не моя корона!</td><td>But I do not regret my choice and believe that I can preserve the fragile equilibrium. And may the prosperity of the Dynasty be granted by my knife, not my crown!</td><td>Джун бросает вызов Теневому Разуму, герои готовятся к битве. Вместо битвы сразу переход к заставке с логотипом и демонстрации скина.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
